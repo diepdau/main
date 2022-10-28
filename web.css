@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Lato:wght@300&family=Open+Sans:wght@300&family=Pattaya&family=Poppins:wght@200&family=Roboto:wght@300;400&family=Tajawal:wght@200&display=swap');
+:root{
+    --main--color:black;
+    --main--text: 'Dancing Script';
+}
+p{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    background-image: url(./hinh/la.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.nav ul{
+    list-style: none;
+    color: white;
+    font-family: black;
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+}
+.nav ul li{
+    padding: 14px 29px;
+    font-family: var(--main--text);
+    font-size: 24px;
+    font-weight: bold;
+}
+.nidung{
+    padding: 68px 40px 40px 40px;
+    margin: 51px 110px 51px 110px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-direction:column ;
+}
+@media  (min-width:700px){
+    .nidung{
+        flex-direction: row;     
+    }
+    
+   
+}
+.nidung li{
+    width: 255px;
+    height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: rgba(209, 205, 205, 0.5);
+    border: 6px solid  white;
+    border-radius: 50px;
+    
+}
+.nidung .icon .fa{
+    padding: 40px;
+    font-size: 90px;
+    color:white;  
+}
+.nidung li .noi{
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    color:white ;
+    font-weight: bold;
+}
+.nidung li .khoi{
+    box-sizing: border-box;
+    border-radius: 61px;
+    width: 112px;
+    height: 112px;
+    background-color: rgb(255, 255, 255);
+    border: 6px solid white;
+    position: absolute;
+    margin: -70px;
+}
+.nidung li .khoi p{
+    padding: 28px;
+    color: rgb(160, 152, 152);
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+.nidung li:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
